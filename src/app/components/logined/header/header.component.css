@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  background: #34e89e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 6;
+}
+
+.logo {
+  background: url("../../../../assets/images/logo.png") no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+.dropdown {
+  float: right;
+  cursor: pointer;
+  margin-right: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown:hover {
+  color: #337ab7;
+}
+
+.dropdown i {
+  padding-left: 10px;
+}

@@ -1,0 +1,24 @@
+.sidebar {
+  font-size: 16px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 50px 0 0 0;
+  height: 100%;
+  width: 50px;
+  margin: 0;
+  list-style: none;
+  background: #222;
+}
+
+.sidebar:hover {
+  width: auto;
+}
+
+.nav-link {
+  border-radius: 0 !important;
+}
+
+.nav-link:not(.active):hover {
+  background: aliceblue;
+}

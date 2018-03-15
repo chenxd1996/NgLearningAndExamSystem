@@ -1,0 +1,7 @@
+<div class="height-100-percent" [ngClass]="{login: !(userInfo.loginStateChange | async)}">
+  <app-loading class="height-100-percent" *ngIf="http.loading | async" [@InOut]></app-loading>
+  <!--<app-login class="height-100-percent" *ngIf="!loading && !(userInfo.loginStateChange | async)"></app-login>-->
+  <!--<app-logined class="height-100-percent" *ngIf="!loading && (userInfo.loginStateChange | async)"></app-logined>-->
+  <router-outlet></router-outlet>
+</div>
+

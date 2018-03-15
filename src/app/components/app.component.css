@@ -1,0 +1,6 @@
+.login {
+  background: url("../../assets/images/background.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}

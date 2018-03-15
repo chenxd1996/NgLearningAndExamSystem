@@ -1,0 +1,39 @@
+<div class="login-modal">
+  <div class="modal-header">
+    <h1 class="title">用户登录</h1>
+  </div>
+  <div class="modal-body">
+    <form class="form">
+      <div class="form-row col-md-12">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+               <i class="fa-user fa fa-fw"></i>
+            </span>
+          </div>
+          <input class="form-control" placeholder="账号" type="text" required [(ngModel)]="form.id" name="id">
+        </div>
+        <div class="input-group password">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fa-key fa fa-fw"></i>
+            </span>
+          </div>
+          <input class="form-control" placeholder="密码" type="password" [(ngModel)]="form.rawPassword" name="rawPassword" required>
+        </div>
+      </div>
+      <div class="form-row col-md-12">
+        <div class="form-check autoLogin">
+          <input class="form-check-input" type="checkbox" id="autoLogin">
+          <label class="form-check-label" for="autoLogin">自动登录</label>
+        </div>
+        <div class="forgot-password">
+          <a href="/">忘记密码?</a>
+        </div>
+      </div>
+      <div class="form-row col-md-12 submit">
+        <button type="submit" class="btn btn-primary" (click)="login()">登录</button>
+      </div>
+    </form>
+  </div>
+</div>

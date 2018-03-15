@@ -1,0 +1,14 @@
+<div class="header">
+  <div class="logo">
+    <div class="dropdown" ngbDropdown placement="bottom-right">
+      <div ngbDropdownToggle>
+        <i class="fa fa-fw fa-user-o"></i>
+      </div>
+      <div class="dropdown-menu" ngbDropdownMenu>
+        <button class="dropdown-item">姓名：{{ userInfo.userName }}</button>
+        <button class="dropdown-item">账号：{{ userInfo.id }}</button>
+        <button class="dropdown-item text-center" (click)="logout()">退出登录</button>
+      </div>
+    </div>
+  </div>
+</div>

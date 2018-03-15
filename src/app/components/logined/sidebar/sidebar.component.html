@@ -1,0 +1,14 @@
+<ul class="sidebar nav flex-column nav-pills" (mouseenter)="unfold()" (mouseleave)="fold()">
+  <li class="nav-item text-center">
+    <a href="" class="nav-link active">
+      <i class="fa fa-user-o" aria-hidden="true"></i>
+      <span *ngIf="!isFolded">用户管理</span>
+    </a>
+  </li>
+  <li class="nav-item text-center">
+    <a href="" class="nav-link">
+      <i class="fa fa-info-circle" aria-hidden="true"></i>
+      <span *ngIf="!isFolded">个人资料</span>
+    </a>
+  </li>
+</ul>
